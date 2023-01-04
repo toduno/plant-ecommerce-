@@ -37,7 +37,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='flex flex-col items-center'>
+        <div className='pl-2'>
             <h2 className={h2Style}>Why You Should Keep <span className='text-green-900'><b>Indoor Plants</b></span></h2>
             
             <div className={containerStyle}>
