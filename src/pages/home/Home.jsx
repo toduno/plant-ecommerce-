@@ -13,9 +13,9 @@ const Home = () => {
     const h2Style = 'max-w-[60vw] md:max-w-full m-auto text-center my-10 md:my-14 text-xl md:text-2xl'
 
     const containerStyle = 'w-full flex flex-col md:flex-row flex-wrap gap-y-7 md:gap-y-14 gap-x-10 md:items-center justify-center'
-    const divStyle = 'flex md:flex-col lg:flex-row md:w-[40%] justify-center gap-x-4'
-    const numStyle = 'md:mb-3 flex items-center justify-center text-white text-xl md:text-2xl lg:text-3xl bg-green-800 rounded-full w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 font-semibold'
-    const divH4PStyle = 'max-w-xs'
+    const divStyle = 'flex flex-col lg:flex-row md:w-[40%] justify-center gap-x-4'
+    const numStyle = 'mb-3 lg:mb-0 flex items-center justify-center text-white text-xl md:text-2xl lg:text-3xl bg-green-800 rounded-full w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 font-semibold'
+    const divH4PStyle = 'lg:max-w-xs'
     const h4Style = 'tracking-wide font-semibold uppercase'
     const divLineStyle = 'bg-black w-5 md:w-7 h-[1.5px] mt-1 mb-4'
     
@@ -24,7 +24,8 @@ const Home = () => {
     const iconStyle = 'w-16 h-16'
     const iconDivStyle = 'flex items-center justify-center bg-green-300 rounded-full w-32 h-32 mb-3'
     const iconContainerStyle = 'text-center md:w-[40%] flex flex-col gap-y-2 md:gap-y-3 items-center'
-    const pStyle = 'max-w-[100%]'
+    const p1Style = 'max-w-full'
+    const pStyle = 'max-w-xs'
 
     const telephone = '123456789'
 
@@ -38,7 +39,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='pl-2 flex flex-col items-center justify-center m-auto '>
+        <div className='pl-2'>
             <h2 className={h2Style}>Why You Should Keep <span className='text-green-900'><b>Indoor Plants</b></span></h2>
             
             <div className={containerStyle}>
@@ -47,16 +48,16 @@ const Home = () => {
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Breath of fresh air</h4>
                         <div className={divLineStyle}></div>
-                        <p className={pStyle}>The roots and soil of houseplants can reduce airborne volatile organic compounds (VOCs) significantly</p>
+                        <p className={p1Style}>The roots and soil of houseplants can reduce airborne volatile organic compounds (VOCs) significantly</p>
                     </div>
                 </div>
 
                 <div className={divStyle}>
-                    <div className='w-[50%]'><div className={numStyle}>2</div></div>
+                    <div className={numStyle}>2</div>
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Boost Your Productivity</h4>
                         <div className={divLineStyle}></div>
-                        <p className={pStyle}>Multiple studies have found that plants in a workspace increase both productivity and creativity</p>
+                        <p className={p1Style}>Multiple studies have found that plants in a workspace increase both productivity and creativity</p>
                     </div>
                 </div>
 
@@ -65,7 +66,7 @@ const Home = () => {
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Help Reduce Stress Levels</h4>
                         <div className={divLineStyle}></div>
-                        <p className={pStyle}>Plants in your home or office can make you feel more comfortable, soothed and natural</p>
+                        <p className={p1Style}>Plants in your home or office can make you feel more comfortable, soothed and natural</p>
                     </div>
                 </div>
 
@@ -74,7 +75,7 @@ const Home = () => {
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Therapeutic</h4>
                         <div className={divLineStyle}></div>
-                        <p className={pStyle}>Indoor gardening can be helpful for people experiencing the symptoms of mental illness </p>
+                        <p className={p1Style}>Indoor gardening can be helpful for people experiencing the symptoms of mental illness </p>
                     </div>
                 </div>
             </div>
