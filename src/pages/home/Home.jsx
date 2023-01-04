@@ -52,7 +52,7 @@ const Home = () => {
                 </div>
 
                 <div className={divStyle}>
-                    <div className='w-[30%]'><div className={numStyle}>2</div></div>
+                    <div className='w-[50%]'><div className={numStyle}>2</div></div>
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Boost Your Productivity</h4>
                         <div className={divLineStyle}></div>
