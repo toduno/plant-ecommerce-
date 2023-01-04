@@ -13,7 +13,7 @@ const Home = () => {
     const h2Style = 'max-w-[60vw] md:max-w-full m-auto text-center my-10 md:my-14 text-xl md:text-2xl'
 
     const containerStyle = 'w-full flex flex-col md:flex-row flex-wrap gap-y-7 md:gap-y-14 gap-x-10 md:items-center justify-center'
-    const divStyle = 'flex md:flex-col lg:flex-row w-full md:w-[40%] justify-center gap-x-4'
+    const divStyle = 'flex md:flex-col lg:flex-row md:w-[40%] justify-center gap-x-4'
     const numStyle = 'md:mb-3 flex items-center justify-center text-white text-xl md:text-2xl lg:text-3xl bg-green-800 rounded-full w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 font-semibold'
     const divH4PStyle = 'max-w-xs'
     const h4Style = 'tracking-wide font-semibold uppercase'
@@ -24,6 +24,7 @@ const Home = () => {
     const iconStyle = 'w-16 h-16'
     const iconDivStyle = 'flex items-center justify-center  bg-green-300 rounded-full w-32 h-32 mb-3'
     const iconContainerStyle = 'text-center md:w-[40%] flex flex-col gap-y-2 md:gap-y-3 items-center'
+    const pStyle = 'max-w-xs'
 
     const telephone = '123456789'
 
@@ -37,7 +38,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='pl-2'>
+        <div className='pl-2 flex flex-col items-center justify-center'>
             <h2 className={h2Style}>Why You Should Keep <span className='text-green-900'><b>Indoor Plants</b></span></h2>
             
             <div className={containerStyle}>
@@ -95,33 +96,33 @@ const Home = () => {
                 <div className={iconContainerStyle}>
                     <div className={iconDivStyle}><RiCustomerService2Line className={iconStyle} /></div>
                     <h4 className={h4Style}>Consultation</h4>
-                    <p>We'll Help You Find The Right Plants For Your House</p>
+                    <p className={pStyle}>We'll Help You Find The Right Plants For Your House</p>
                 </div>
 
                 <div className={iconContainerStyle}>
                     <div className={iconDivStyle}><GiPlantWatering className={iconStyle}  /></div>
                     <h4 className={h4Style}>Planting</h4>
-                    <p>We'll Guide You Through How To Correctly Plant It</p>
+                    <p className={pStyle}>We'll Guide You Through How To Correctly Plant It</p>
                 </div>
 
                 <div className={iconContainerStyle}>
                     <div className={iconDivStyle}><TbPlant2 className={iconStyle} /></div>
                     <h4 className={h4Style}>Happy Plants</h4>
-                    <p>Enjoy The Decor And Positivity Of Your New Plants</p>
+                    <p className={pStyle}>Enjoy The Decor And Positivity Of Your New Plants</p>
                 </div>
 
                 <div className={iconContainerStyle}>
                     <div className={iconDivStyle}><TbShovel className={iconStyle} /></div>
                     <h4 className={h4Style}>Maintenance</h4>
-                    <p>We Also Help With Keeping The Plant Healthy</p>
+                    <p className={pStyle}>We Also Help With Keeping The Plant Healthy</p>
                 </div>
             </div>
 
-            <Link id='contact' >
-                <a href={`tel: ${telephone}`}>
-                    <button className='border-2 border-green-900 bg-white rounded-full px-5 py-1 hover:text-white hover:bg-green-900 m-auto mt-10 md:mt-14'>Schedule A Call</button>
-                </a>
-            </Link>
+            
+            <a id='contact' href={`tel: ${telephone}`}>
+                <button className='border-2 border-green-900 bg-white rounded-full px-5 py-1 hover:text-white hover:bg-green-900 m-auto mt-10 md:mt-14'>Schedule A Call</button>
+            </a>
+            
         </div>
     </div>
   )
