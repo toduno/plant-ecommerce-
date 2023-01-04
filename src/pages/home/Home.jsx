@@ -13,7 +13,7 @@ const Home = () => {
     const h2Style = 'max-w-[60vw] md:max-w-full m-auto text-center my-10 md:my-14 text-xl md:text-2xl'
 
     const containerStyle = 'w-full flex flex-col md:flex-row flex-wrap gap-y-7 md:gap-y-14 gap-x-10 md:items-center justify-center'
-    const divStyle = 'flex md:flex-col lg:flex-row md:w-[40%] justify-center gap-x-4'
+    const divStyle = 'flex md:flex-col lg:flex-row w-full md:w-[40%] justify-center gap-x-4'
     const numStyle = 'md:mb-3 flex items-center justify-center text-white text-xl md:text-2xl lg:text-3xl bg-green-800 rounded-full w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 font-semibold'
     const divH4PStyle = 'max-w-xs'
     const h4Style = 'tracking-wide font-semibold uppercase'
