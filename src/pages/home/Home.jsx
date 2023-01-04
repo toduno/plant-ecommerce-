@@ -22,9 +22,9 @@ const Home = () => {
     const products = Products.slice(0, 3)
 
     const iconStyle = 'w-16 h-16'
-    const iconDivStyle = 'flex items-center justify-center  bg-green-300 rounded-full w-32 h-32 mb-3'
+    const iconDivStyle = 'flex items-center justify-center bg-green-300 rounded-full w-32 h-32 mb-3'
     const iconContainerStyle = 'text-center md:w-[40%] flex flex-col gap-y-2 md:gap-y-3 items-center'
-    const pStyle = 'max-w-xs'
+    const pStyle = 'max-w-[100%]'
 
     const telephone = '123456789'
 
@@ -38,7 +38,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='pl-2 flex flex-col items-center justify-center'>
+        <div className='pl-2 flex flex-col items-center justify-center m-auto '>
             <h2 className={h2Style}>Why You Should Keep <span className='text-green-900'><b>Indoor Plants</b></span></h2>
             
             <div className={containerStyle}>
@@ -47,16 +47,16 @@ const Home = () => {
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Breath of fresh air</h4>
                         <div className={divLineStyle}></div>
-                        <p>The roots and soil of houseplants can reduce airborne volatile organic compounds (VOCs) significantly</p>
+                        <p className={pStyle}>The roots and soil of houseplants can reduce airborne volatile organic compounds (VOCs) significantly</p>
                     </div>
                 </div>
 
                 <div className={divStyle}>
-                    <div className={numStyle}>2</div>
+                    <div className='w-[30%]'><div className={numStyle}>2</div></div>
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Boost Your Productivity</h4>
                         <div className={divLineStyle}></div>
-                        <p>Multiple studies have found that plants in a workspace increase both productivity and creativity</p>
+                        <p className={pStyle}>Multiple studies have found that plants in a workspace increase both productivity and creativity</p>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@ const Home = () => {
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Help Reduce Stress Levels</h4>
                         <div className={divLineStyle}></div>
-                        <p>Plants in your home or office can make you feel more comfortable, soothed and natural</p>
+                        <p className={pStyle}>Plants in your home or office can make you feel more comfortable, soothed and natural</p>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ const Home = () => {
                     <div className={divH4PStyle}>
                         <h4 className={h4Style}>Therapeutic</h4>
                         <div className={divLineStyle}></div>
-                        <p>Indoor gardening can be helpful for people experiencing the symptoms of mental illness </p>
+                        <p className={pStyle}>Indoor gardening can be helpful for people experiencing the symptoms of mental illness </p>
                     </div>
                 </div>
             </div>
