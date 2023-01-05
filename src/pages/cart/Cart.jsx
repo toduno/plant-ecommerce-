@@ -12,7 +12,7 @@ const Cart = () => {
 
   const navigate = useNavigate()
 
-  const btnStyle = 'bg-white hover:bg-green-00 hover:text-white border border-green-800 rounded-full px-4 py-1 md:py-2 mr-2 md:mr-4 text-xs md:text-sm tracking-wide'
+  const btnStyle = 'bg-white hover:bg-green-900 hover:text-white border border-green-800 rounded-full px-4 py-1 md:py-2 mr-2 md:mr-4 text-xs md:text-sm tracking-wide'
 
   return (
     <div className='flex flex-col items-center justify-center'>
